@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
 @import 'variavel.css';
 
+/* 
+font-family: 'Lato', sans-serif;
+font-family: 'Merriweather', serif;
+ */
 * {
     margin: 0px;
     padding: 0px;
@@ -8,41 +14,86 @@
 
 body {
     height: 100vh;
-    background-image: linear-gradient(to right, rgba(255, 202, 4, 0.7), rgba(238, 28, 38, 0.8) 48%, rgba(0, 0, 0, 7) 100%);
-
-
+    background-color: rgba(20, 20, 20, 0.87);
+    color: #fff;
 }
 
 /* HOME PAGE */
 
 
 .home {
-    border: 2px solid black;
     height: 100vh;
 }
 
 .header {
-     border: 2px solid green;
-    display: flex;
-}
-.header .logo {
-     border: 2px solid blue;
-}
-.header .navbar {
-     border: 2px solid purple;
-}
-
-.content {
-    border: 2px solid greenyellow;
+    background-color: rgba(29, 27, 27, 0.89);
     display: flex;
     justify-content: space-around;
-    ;
+    align-items: center;
+    height: 8vh;
+}
+.header .navbar ul {
+    list-style: none;
+    display: flex;
+}
+.header .navbar li {
+    margin: 0px 10px;
+}
+.header .navbar a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px;
+}
+
+
+.header .logo {
+    width: 30%;
+    font-family: 'Lato', sans-serif;
+}
+.header .logo h2 {
+    font-size: 1.8rem;
+}
+.header .logo span:first-child {
+    color: var(--red);
+}
+.header .logo span:last-child {
+    color: var(--yellow);
+}
+
+
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    
 }
 .content .text {
-    border: 2px solid rgb(38, 120, 145);
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/Festival+Eventos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Merriweather', serif;
 }
+.content .text span {
+    font-size: 1.5rem;
+}
+.content .text h1 {
+    font-size: 3.3rem;
+}
+.content .text h3 {
+    font-size: 1.7rem;
+    margin-bottom: 60px;
+}
+
+
 .content .image-logo {
-    border: 2px solid rgb(124, 56, 145);
+    background-color: black;
 }
 
 /* GALLERY IMAGES */
