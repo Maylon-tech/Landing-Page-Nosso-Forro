@@ -18,7 +18,14 @@ body {
     color: #fff;
 }
 
-/* HOME PAGE */
+.container {
+    max-width: 1280px;
+    min-width: 340px;
+    margin: 0 auto;
+}
+
+
+/* HOME PAGE -  navabar  */
 
 
 .home {
@@ -71,11 +78,11 @@ body {
     color: var(--yellow);
 }
 
-
+/* HOME PAGE  -  conteúdo  */
 
 .content {
     width: 100vw;
-    height: 100%;
+    height: 88vh;
     background-image: linear-gradient(90deg, #404447 0%, #202425 100%);
     background-size: cover;
     display: flex;
@@ -124,46 +131,59 @@ body {
 }
 
 
-
-
-.paralax-1 {
-    height: 10vh;
-    width: 100%;
-    background: #222;
-
-
-
-        /*  CREATE A GALLERY IMAGES SLIDER */
-}
-
 /* GALLERY IMAGES */
 
 .gallery {
-    height: 100vh;
+    height: 160%;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/Nosso-Forro-anjo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-
-
-
-
-
-
-.paralax-2 {
-    height: 10vh;
-    width: 100%;
-    background: #444;
-
-
-    /*  CREATE  INPUTS FORM FIELDS      */
+.gallery .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
 }
+
+.title-gallery {
+    padding: 20px;
+}
+.title-gallery h1 {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+}
+
+.gallery-block {
+    height: 100%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+.gallery-block .block-image {
+    width: 380px;
+    height: 280px;
+    margin: 20px auto;
+}
+.gallery-block .block-image img {
+    width: 100%;
+    height: 100%;
+    border: 4px solid var(--yellow);
+    border-radius: 6px;
+}
+
+
+
+
 
 /* TEACHERS - IMAGES */
 
 .teachers {
+    border: 2px solid blue;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/Nosso-Forro-Vermelha_team.jpg);
     background-size: cover;
@@ -171,7 +191,21 @@ body {
     background-attachment: fixed;
 }
 
+
+
+
+
+
+
+
+
+
 /* EVENTS - IMAGES */
+
+
+
+
+
 
 
 .events {
