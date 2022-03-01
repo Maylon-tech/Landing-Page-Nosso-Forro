@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 1180px;
     min-width: 340px;
     margin: 0 auto;
 }
@@ -86,7 +86,6 @@ body {
     background-image: linear-gradient(90deg, #404447 0%, #202425 100%);
     background-size: cover;
     display: flex;
-    
     align-items: center;
     padding: 50px 100px;
     overflow-x: hidden;
@@ -98,7 +97,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    
     font-family: 'Lato', sans-serif;
 }
 .content .text span {
@@ -116,7 +114,6 @@ body {
     font-size: 1.7rem;
     padding-top: 30px;
 }
-
 
 .content .image-logo {
     width: 50%;
@@ -183,16 +180,80 @@ body {
 /* TEACHERS - IMAGES */
 
 .teachers {
-    border: 2px solid blue;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/Nosso-Forro-Vermelha_team.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+.teachers .container {
+    height: 100vh;
+}
+
+.teachers .title-teachers h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
 
 
+.teachers .teachers-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-gap: 25px;
+    padding: 35px;
+    height: 85vh;
+    font-family: 'Merriweather', serif;
+}
 
+.teachers .teachers-content .teacher-block {
+    height: 40vh;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+    border-radius: 8px;
+    border: 2px solid var(--red);
+    transition: all 0.4s ease;
+}
+.teachers .teachers-content .teacher-block:hover {
+    background-color: rgba(0,0,0,0.7);
+    transform: scale(1.05);
+}
+.teachers .teachers-content .teacher-block img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: 2px solid var(--red);
+    margin: 15px 0px;
+    transition: all 0.5s ease;
+}
+.teachers .teachers-content .teacher-block img:hover {
+    transform: scale(1.45);
+}
+.teachers .teachers-content .teacher-block .text-block {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.teachers .teachers-content .teacher-block .text-block a {
+    padding: 7px;
+    border: 2px solid var(--yellow);
+    border-radius: 8px;
+    background-color: #202425;
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    margin: 10px 0px;
+    transition: all 0.4s ease;
+}
+.teachers .teachers-content .teacher-block .text-block a:hover {
+    background-color: var(--red);
+}
 
 
 
