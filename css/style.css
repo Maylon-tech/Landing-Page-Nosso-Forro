@@ -22,6 +22,7 @@ body {
     max-width: 1180px;
     min-width: 340px;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 
@@ -34,11 +35,11 @@ body {
 }
 
 .header {
-    background: rgba(0,2,4,0.7);
+    background: rgba(0,2,4,0.5);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 12vh;
+    height: 8vh;
 }
 .header .navbar ul {
     list-style: none;
@@ -257,30 +258,96 @@ body {
 
 
 
-
-
-
-
 /* EVENTS - IMAGES */
 
 
-
-
-
-
-
-.events {
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/Treino-Livre\ +Chroregrafia.jpg);
+.contact-events {
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/logo-removebg-preview.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
+    border: 2px solid red;
+
+}
+
+.contact-events .container {
+      border: 2px solid rgb(0, 4, 255);
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.contact-events .content-left-form {
+      border: 2px solid rgb(0, 255, 55);
+    padding: 20px;
+    width: 60%;
+}
+.contact-events .content-left-form .form-content {
+    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+}
+
+
+.contact-events .content-right-location {
+    border: 2px solid rgb(167, 10, 140);
+    width: 40%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    height: 100%;
+}
+.contact-events .content-right-location .text-content {
+    border: 2px dotted red;
+    height: 50%;
+    width: 100%;
+    margin: 15px 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-events .content-right-location .text-content .aulas {
+    border: 2px solid white;
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.contact-events .content-right-location .text-content .eventos {
+    border: 2px solid white;
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+.contact-events .content-right-location .map {
+    border: 2px dashed green;
+    height: 50%;
+    width: 100%;
 }
 
 
 /*  */
 
 
-
+.footer {
+    height: 10vh;
+    border: 2px solid white;
+}
 
 
 /*  */

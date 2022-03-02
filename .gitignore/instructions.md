@@ -17,7 +17,7 @@ Imagens + perfil + icons de redes Sociais
 
     FOURTY PAGE
 
-* aulas + eventos - Festivais  --> Horários
+* aulasHorários + eventos - Festivais  --> 
 
     FIFTHY PAGE
                                             Youtube - Whatsapp - E-mail}
