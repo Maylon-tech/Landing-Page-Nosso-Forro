@@ -288,9 +288,21 @@ body {
     border: 2px solid black;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
-
-
+.contact-events .content-left-form .form-content .tel-email {
+    margin: 35px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+}
+.contact-events .content-left-form .form-content input {
+    padding: 10px;
+}
 .contact-events .content-right-location {
     border: 2px solid rgb(167, 10, 140);
     width: 40%;
@@ -312,17 +324,51 @@ body {
     align-items: center;
 }
 .contact-events .content-right-location .text-content .aulas {
-    border: 2px solid white;
     width: 100%;
     height: 50%;
     display: flex;
+    padding: 8px;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.8rem;
+}
+.contact-events .content-right-location .text-content ion-icon {
+    font-size: 45px;
+    color: var(--yellow);
+    margin-bottom: 7px;
+    border: 2px solid red;
+    border-radius: 50%;
+    padding: 5px;
+}
+.contact-events .content-right-location .text-content .aulas .aulas-1, .aulas-2 {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
 }
 
+.contact-events .content-right-location .text-content .aulas h4 {
+    color: var(--red);
+    font-size: 1rem;
+}
+
+
 .contact-events .content-right-location .text-content .eventos {
-    border: 2px solid white;
     width: 100%;
     height: 50%;
     display: flex;
+    padding: 8px;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contact-events .content-right-location .text-content .eventos .eventos-1 {
+    text-align: center;
+}
+.contact-events .content-right-location .text-content .eventos .exams {
+    text-align: center;
 }
 
 
