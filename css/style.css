@@ -267,12 +267,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    border: 2px solid red;
-
 }
 
 .contact-events .container {
-      border: 2px solid rgb(0, 4, 255);
     padding: 50px;
     display: flex;
     justify-content: space-around;
@@ -280,12 +277,10 @@ body {
 }
 
 .contact-events .content-left-form {
-      border: 2px solid rgb(0, 255, 55);
-    padding: 20px;
+    padding: 10px;
     width: 60%;
 }
 .contact-events .content-left-form .form-content {
-    border: 2px solid black;
     width: 100%;
     height: 100%;
     display: flex;
@@ -293,28 +288,36 @@ body {
     align-items: flex-start;
     justify-content: center;
 }
-.contact-events .content-left-form .form-content .tel-email {
-    margin: 35px 0px;
+.contact-events .content-left-form .form-content 
+.tel-email, .nome-sobrenome, .city-birth {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 25px;
+    justify-content: flex-start;
+    padding: 10px 0px;
 }
 .contact-events .content-left-form .form-content input {
     padding: 10px;
+    border-radius: 5px;
+    width: 400px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+}
+.contact-events .content-left-form .form-content label {
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    margin: 7px;
 }
 .contact-events .content-right-location {
-    border: 2px solid rgb(167, 10, 140);
-    width: 40%;
+    width: 60%;
     padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-   
     height: 100%;
 }
 .contact-events .content-right-location .text-content {
-    border: 2px dotted red;
     height: 50%;
     width: 100%;
     margin: 15px 0px;
@@ -333,10 +336,9 @@ body {
     font-size: 0.8rem;
 }
 .contact-events .content-right-location .text-content ion-icon {
-    font-size: 45px;
+    font-size: 35px;
     color: var(--yellow);
     margin-bottom: 7px;
-    border: 2px solid red;
     border-radius: 50%;
     padding: 5px;
 }
@@ -360,7 +362,7 @@ body {
     display: flex;
     padding: 8px;
     align-items: center;
-    justify-content: space-around;
+    margin-top: 10px;
     font-size: 0.9rem;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -381,20 +383,41 @@ body {
 
 
 .contact-events .content-right-location .map {
-    border: 2px dashed green;
     height: 50%;
     width: 100%;
+    
 }
-
+.contact-events .content-right-location .map img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
 
 /*  */
 
 
 .footer {
-    height: 10vh;
-    border: 2px solid white;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(63, 50, 19);
 }
-
+.footer p {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--yellow);
+    font-weight: 500;
+    text-align: center;
+}
+.footer a {
+    text-decoration: none;
+    color: var(--red);
+    font-style: italic;
+}
+.footer a:hover {
+    border-bottom: 1px solid white;
+}
 
 /*  */
 
