@@ -93,8 +93,10 @@ body {
     background-attachment: fixed;
     display: flex;
     align-items: center;
+    justify-content: space-around;
     padding: 50px 100px;
     overflow-x: hidden;
+    border: 2px solid orange;
 }
 .content .text {
     width: 50%;
@@ -173,22 +175,27 @@ body {
     font-size: 1.2rem;
     margin-top: 15px;
 }
+.content .image-logo {
+    border: 2px solid red;
+    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+}
 .content .image-logo img {
     width: 100%;
     height: 100%;
-    border-radius: 8px;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    object-fit: cover;
+    box-shadow: 0px 0px 25px 0px rgba(230, 223, 0, 0.75);
+    border-radius: 50%;
 }
 
 /* GALLERY IMAGES */
 
 .gallery {
-    height: 160%;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/Nosso-Forro-anjo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    border-top: 6px solid var(--yellow);
 }
 .gallery .container {
     display: flex;
@@ -218,34 +225,27 @@ body {
 .gallery-block .block-image img {
     width: 100%;
     height: 100%;
-    border: 4px solid var(--yellow);
+    border: 2px solid var(--yellow);
     border-radius: 6px;
 }
 
 /* TEACHERS - IMAGES */
 
 .teachers {
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/Nosso-Forro-Vermelha_team.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    border-top: 6px solid var(--red);
-}
-.teachers .container {
-    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 .teachers .title-teachers h1 {
     font-size: 2.5rem;
     text-align: center;
-    margin-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    padding: 2rem 0;
 }
 .teachers .teachers-content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     grid-gap: 25px;
     padding: 35px;
-    height: 85vh;
     font-family: 'Merriweather', serif;
 }
 
@@ -256,26 +256,22 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background: rgba(0,0,0,0.5);
+    background: rgba(28, 49, 49, 0.69);
     border-radius: 8px;
-    border: 2px solid var(--red);
     transition: all 0.4s ease;
 }
 .teachers .teachers-content .teacher-block:hover {
-    background-color: rgba(0,0,0,0.7);
+    background: rgba(31, 54, 54, 0.905);
     transform: scale(1.05);
 }
 .teachers .teachers-content .teacher-block img {
     width: 100px;
     height: 100px;
     border-radius: 100px;
-    border: 2px solid var(--red);
     margin: 15px 0px;
     transition: all 0.5s ease;
 }
-.teachers .teachers-content .teacher-block img:hover {
-    transform: scale(1.45);
-}
+
 .teachers .teachers-content .teacher-block .text-block {
     height: 100%;
     display: flex;
@@ -284,26 +280,26 @@ body {
     justify-content: space-around;
 }
 .teachers .teachers-content .teacher-block .text-block a {
-    padding: 7px;
-    border: 2px solid var(--yellow);
-    border-radius: 8px;
-    background-color: #202425;
+    padding: .8rem;
+    border-radius: 4px;
     color: #fff;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     margin: 10px 0px;
     transition: all 0.4s ease;
+    background-color: crimson;
 }
 .teachers .teachers-content .teacher-block .text-block a:hover {
-    background-color: var(--red);
+    background-color: rgba(212, 28, 65, 0.753);
 }
 
 
 /* EVENTS - IMAGES */
 
 .contact-events {
-    height: 90vh;
+    border: 2px solid white;
+ 
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/logo-removebg-preview.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -329,31 +325,23 @@ body {
     align-items: flex-start;
     justify-content: center;
 }
-.contact-events .content-left-form .form-content 
+
 .tel-email, .nome-sobrenome, .city-birth {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     padding: 10px 0px;
+    
 }
 .contact-events .content-left-form .form-content .nome-sobrenome {
-    border: 2px solid var(--yellow);
-    padding: 10px 25px;
-    border-radius: 10px;
-    margin-bottom: 12px;
+    padding: 10px 25px;   
     background-color: rgba(0, 0, 0, 0.6);
 }
 .contact-events .content-left-form .form-content .tel-email {
-    border: 2px solid var(--yellow);
     padding: 10px 25px;
-    border-radius: 10px;
-    margin-bottom: 12px;
     background-color: rgba(0, 0, 0, 0.6);
 }
 .contact-events .content-left-form .form-content .city-birth {
-    border: 2px solid var(--yellow);
     padding: 10px 25px;
-    border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -372,21 +360,22 @@ body {
     margin: 7px;
 }
 .contact-events .content-right-location {
-    width: 60%;
+    width: 70%;
     padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
+    border: 2px solid orange;
 }
 .contact-events .content-right-location .text-content {
-    height: 50%;
     width: 100%;
     margin: 15px 0px;
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 2px solid orangered;
 }
 .contact-events .content-right-location .text-content .aulas {
     width: 100%;
@@ -412,10 +401,6 @@ body {
    align-items: center;
 }
 
-.contact-events .content-right-location .text-content .aulas h4 {
-    color: var(--red);
-    font-size: 1rem;
-}
 
 .contact-events .content-right-location .text-content .eventos {
     width: 100%;
