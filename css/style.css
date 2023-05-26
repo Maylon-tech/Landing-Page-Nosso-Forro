@@ -70,8 +70,6 @@ body {
 .header .logo a {
     text-decoration: none;
     color: #fff;
-}
-.header .logo h2 {
     font-size: 1.8rem;
 }
 .header .logo span:first-child {
@@ -79,6 +77,10 @@ body {
 }
 .header .logo span:last-child {
     color: var(--yellow);
+}
+
+.header .menu {
+    display: none;
 }
 
 /* HOME PAGE  -  conteúdo  */
@@ -96,7 +98,7 @@ body {
     justify-content: space-around;
     padding: 50px 100px;
     overflow-x: hidden;
-    border: 2px solid orange;
+    
 }
 .content .text {
     width: 50%;
@@ -297,9 +299,7 @@ body {
 
 /* EVENTS - IMAGES */
 
-.contact-events {
-    border: 2px solid white;
- 
+.contact-events { 
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/logo-removebg-preview.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -366,7 +366,6 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100%;
-    border: 2px solid orange;
 }
 .contact-events .content-right-location .text-content {
     width: 100%;
@@ -375,7 +374,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid orangered;
 }
 .contact-events .content-right-location .text-content .aulas {
     width: 100%;
@@ -400,8 +398,6 @@ body {
    justify-content: space-around;
    align-items: center;
 }
-
-
 .contact-events .content-right-location .text-content .eventos {
     width: 100%;
     height: 50%;
@@ -422,7 +418,6 @@ body {
 .contact-events .content-right-location .map {
     height: 60%;
     width: 100%;
-    border: 4px solid var(--red);
     border-radius: 7px;
 }
 .contact-events .content-right-location .map iframe {
